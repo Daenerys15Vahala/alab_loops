@@ -3,33 +3,28 @@
 // loop 1 to 100
 
 for (let i = 1; i <= 100; i++){
-    console.log(i);
-}
-
-// divisible by 3
-
-for (let i = 1; i <= 100; i++){
-    if (i % 3 === 0){
-    console.log("Fizz");
-    }
-}
-
-// divisible by 5
-
-for (let i = 1; i <= 100; i++){
-    if (i % 5 === 0){
-    console.log("Buzz");
-    }
-}
+    // console.log(i);
 
 // divisible by 3 and 5 
 
-
-for (let i = 1; i <= 100; i++){
     if (i % 3 === 0 && i % 5 === 0){
     console.log("Fizz Buzz");
     }
+
+// divisible by 3
+
+else if (i % 3 === 0){
+    console.log("Fizz");
+    }
+
+// divisible by 5
+else if (i % 5 === 0){
+    console.log("Buzz");
+    }
+
+// not divisible by 3 or 5 
+
+else {
+    console.log(i);
 }
-
-
-
+}
