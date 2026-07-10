@@ -3,42 +3,44 @@
 // part 1 
 // loop 1 to 100
 
-// for (let i = 1; i <= 100; i++){
-//     // console.log(i);
+for (let i = 1; i <= 100; i++){
+    // console.log(i);
 
 // // divisible by 3 and 5 
 
-//     if (i % 3 === 0 && i % 5 === 0){
-//     console.log("Fizz Buzz");
-//     }
+    if (i % 3 === 0 && i % 5 === 0){
+    console.log("Fizz Buzz");
+    }
 
 // // divisible by 3
 
-// else if (i % 3 === 0){
-//     console.log("Fizz");
-//     }
+else if (i % 3 === 0){
+    console.log("Fizz");
+    }
 
 // // divisible by 5
-// else if (i % 5 === 0){
-//     console.log("Buzz");
-//     }
+else if (i % 5 === 0){
+    console.log("Buzz");
+    }
 
-// // not divisible by 3 or 5 
+// not divisible by 3 or 5 
 
-// else {
-//     console.log(i);
-// }
-// }
-
-
+else {
+    console.log(i);
+}
+}
 
 
-// part 2 
+
+
+// // part 2 
+// declare >>>
 let n = 4;
 
 while (true) {
     n++;
 
+// nest prime number 
     let isPrime = true;
 
     for (let i = 2; i < n; i++) {
@@ -46,6 +48,7 @@ while (true) {
             isPrime = false;
             break;
         }
+// found it ? break and exit loop
     }
     if (isPrime) {
         console.log(n);
@@ -55,48 +58,48 @@ while (true) {
 
 
 
-//  part 3 : feeling loopyyyyyyy
+//  part 3 : feeling loopyyyyyyy???
 
-// const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 
-// let space1 = "";
-// let space2 = "";
-// let space3 = "";
-// let space4 = "";
+let space1 = "";
+let space2 = "";
+let space3 = "";
+let space4 = "";
 
-// let currentSpace = 1;
+let currentSpace = 1;
 
-// for (let i = 0; i < csv.lenght; i++) {
-//     let char = csv [i];
+for (let i = 0; i < csv.length; i++) {
+    let char = csv [i];
 
-//     if (char === ",") {
-//         cuurentSpace++;
-//     }
+    if (char === ",") {
+        currentSpace++;
+    }
 
-//     else if (char === "\n") {
-//         console.log(space1, space2, space3, space4);
+    else if (char === "\n") {
+        console.log(space1, space2, space3, space4);
 
-//         space1 = "";
-//         space2 = "";
-//         space3 = "";
-//         space4 = "";
+        space1 = "";
+        space2 = "";
+        space3 = "";
+        space4 = "";
 
-//         currentSpace = 1;
-//     }
+        currentSpace = 1;
+    }
 
-//     else {
-//         if(currentSpace === 1){
-//             space1 += char;
-//         }
-//         else if(currentSpace === 2){
-//             space2 += char;
-//         }
-//         else if(currentSpace === 3){
-//             space3 += char;
-//         }
-//         else if(currentSpace === 4){
-//             space4 += char;
-//         }
-//     }
-// }
-// console.log(space1, space2, space3, space4);
+    else {
+        if(currentSpace === 1){
+            space1 += char;
+        }
+        else if(currentSpace === 2){
+            space2 += char;
+        }
+        else if(currentSpace === 3){
+            space3 += char;
+        }
+        else if(currentSpace === 4){
+            space4 += char;
+        }
+    }
+}
+console.log(space1, space2, space3, space4);
